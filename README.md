@@ -5,16 +5,6 @@ L’objectiu és desenvolupar i comparar diferents **models de classificació su
 
 ---
 
-## 📊 Dataset
-
-- **Conjunt d’entrenament**: `trs_train`
-- **Observacions**: 9.000 pacients
-- **Característiques**: 27 variables
-- **Variable objectiu**: `TRS` (0 = No TRS, 1 = TRS)
-- **Conjunt de test**: 1.000 observacions
-
----
-
 ## 🧪 Metodologia
 
 El treball s’estructura en **tres fases principals**:
@@ -28,56 +18,17 @@ El treball s’estructura en **tres fases principals**:
 
 ### 2. Preprocessament
 - Eliminació de variables redundants i no informatives
-- Codificació de variables categòriques (One-Hot Encoding)
+- Codificació de variables categòriques 
 - Imputació de valors mancants:
-  - Numèriques → mediana
-  - Categòriques → moda
-- Normalització (StandardScaler) quan és necessari
+- Normalització
 - Ponderació de classes per tractar el desbalanceig
-- Split del dataset: 80% entrenament / 20% validació
+- Split del dataset
 
 ### 3. Modelització i Avaluació
 S’han entrenat i comparat tres models predictius:
 - **Support Vector Machine (SVM)**
 - **XGBoost**
 - **Regressió Logística (implementació pròpia)**
-
-La mètrica principal d’optimització és **F1-macro**, per garantir un rendiment equilibrat entre classes.
-
----
-
-## 🤖 Models implementats
-
-### 🔹 Support Vector Machine (SVM)
-- Kernel: lineal i RBF
-- Cerca d’hiperparàmetres amb Grid Search (5-fold CV)
-- Normalització obligatòria
-- Rendiment estable però capacitat discriminativa limitada
-
-### 🔹 XGBoost
-- Model basat en arbres i boosting
-- Regularització intensiva per evitar overfitting
-- No requereix escalat
-- Bona generalització, però rendiment modest en la detecció de TRS
-
-### 🔹 Regressió Logística 
-- Implementació pròpia amb:
-  - Descens de gradient mini-batch
-  - Regularització L2 (Ridge)
-  - Ponderació de classes
-- Preprocessament equivalent al SVM
-- Cerca d’hiperparàmetres manual amb validació creuada
-
----
-
-## 📈 Resultats
-
-Cap dels models aconsegueix una capacitat predictiva elevada:
-- **ROC-AUC ≈ 0.62–0.63**
-- **Recall TRS ≈ 0.5**
-- Dificultat inherent del problema i fort desbalanceig de classes
-
-Els models **generalitzen correctament**, però la detecció de pacients TRS continua sent un repte clínic important.
 
 ---
 
