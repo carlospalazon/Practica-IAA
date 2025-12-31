@@ -5,7 +5,7 @@ L’objectiu és desenvolupar i comparar diferents **models de classificació su
 
 ---
 
-## 🧪 Metodologia
+## Metodologia
 
 El treball s’estructura en **tres fases principals**:
 
@@ -32,8 +32,18 @@ S’han entrenat i comparat tres models predictius:
 
 ---
 
+## Estructura 
+- `INFORME.pdf`: documentació del treball, explicació del procés i anàlisi dels resultats.
+- `EDA.ipynb`: notebook amb l'anàlisi exploratori de les dades.
+- `SVM.ipynb`: notebook amb el codi per a la construcció i validació del Support Vector Machine.
+- `xgboost.ipynb`: notebook amb el codi per a la construcció i validació del XGBoost.
+- `logistic_regression.ipynb`: notebook amb el codi per a la construcció i validació de la regressió logística.
+- `trs_train`: base de dades utilitzada per a l'entrenament i la validació dels models.
+- `trs_eval`: base de dades utilitzada per generar les prediccions per a la competició de Kaggle.
 
-## ✍️ Autoria
+
+
+## Autoria
 
 Treball acadèmic – 2025  
 (Carlos Palazón Domingo / Introducció a l'aprenentatge automàtic / Universitat Politècnica de Catalunya)
