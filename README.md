@@ -41,7 +41,7 @@ S’han entrenat i comparat tres models predictius:
 - `trs_train`: base de dades utilitzada per a l'entrenament i la validació dels models.
 - `trs_eval`: base de dades utilitzada per generar les prediccions per a la competició de Kaggle.
 
-
+---
 
 ## Autoria
 
