@@ -38,8 +38,8 @@ S’han entrenat i comparat tres models predictius:
 - `SVM.ipynb`: notebook amb el codi per a la construcció i validació del Support Vector Machine.
 - `xgboost.ipynb`: notebook amb el codi per a la construcció i validació del XGBoost.
 - `logistic_regression.ipynb`: notebook amb el codi per a la construcció i validació de la regressió logística.
-- `trs_train`: base de dades utilitzada per a l'entrenament i la validació dels models.
-- `trs_eval`: base de dades utilitzada per generar les prediccions per a la competició de Kaggle.
+- `trs_train.csv`: base de dades utilitzada per a l'entrenament i la validació dels models.
+- `trs_eval.csv`: base de dades utilitzada per generar les prediccions per a la competició de Kaggle.
 
 ---
 
